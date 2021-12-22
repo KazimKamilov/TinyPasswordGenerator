@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferDefault</stylestrategy>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../TinyPasswordGenerator.qrc">
+    <normaloff>:/res/app.ico</normaloff>:/res/app.ico</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(255, 255, 255);
+border-style: none;</string>
+  </property>
+  <widget class="QWidget" name="_center_widget">
+   <layout class="QVBoxLayout" name="_center_layout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="_header_widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="_header_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="_toolbar" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(55, 55, 55);
+border-style: none;
+</string>
+         </property>
+         <layout class="QHBoxLayout" name="_toolbar_layout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <spacer name="_sizer1">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="_header_lbl1">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <stylestrategy>PreferAntialias</stylestrategy>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tiny Password Generator</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="_sizer0">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="_window_ctrl_widget" native="true">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="_sys_btn_layout">
+             <item>
+              <widget class="QWidget" name="_window_btn_widget" native="true">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <layout class="QHBoxLayout" name="_sys_layout">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>1</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QToolButton" name="_minimize_btn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>26</width>
+                    <height>26</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../TinyPasswordGenerator.qrc">
+                    <normaloff>:/res/minimize.png</normaloff>:/res/minimize.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="_close_btn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>26</width>
+                    <height>26</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../TinyPasswordGenerator.qrc">
+                    <normaloff>:/res/close.png</normaloff>:/res/close.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="_wnd_ctrl_spacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="_working_widget" native="true">
+      <layout class="QVBoxLayout" name="_working_layout">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="_variants_group">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(75, 75, 75);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 4px;</string>
+         </property>
+         <property name="title">
+          <string>Variants</string>
+         </property>
+         <layout class="QVBoxLayout" name="_variants_layout">
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="_radio_numbers">
+            <property name="text">
+             <string>Only numbers</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_low_letters">
+            <property name="text">
+             <string>Lowercase letters</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_upper_letters">
+            <property name="text">
+             <string>Uppercase letters</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_symbols">
+            <property name="text">
+             <string>Special symbols</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_letters">
+            <property name="text">
+             <string>Lowercase and uppercase letters</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_low_letters_and_numbers">
+            <property name="text">
+             <string>Lowercase letters and numbers</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_upper_letters_and_numbers">
+            <property name="text">
+             <string>Uppercase letters and numbers</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_letters_and_numbers">
+            <property name="text">
+             <string>Lowercase, uppercase letters and numbers</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="_radio_all">
+            <property name="text">
+             <string>All of them</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="_symbols_group">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(75, 75, 75);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 4px;</string>
+         </property>
+         <property name="title">
+          <string>Special Symbols</string>
+         </property>
+         <layout class="QVBoxLayout" name="_symbols_layout">
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="_symbols_line">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(80, 80, 80);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 2px;
+border-color: rgb(90, 90, 90);</string>
+            </property>
+            <property name="text">
+             <string>!@#$%^&amp;_</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="_pass_line">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(75, 75, 75);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 4px;</string>
+         </property>
+         <property name="documentTitle">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Generated password will be here...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="_control_widget" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(75, 75, 75);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 4px;</string>
+         </property>
+         <layout class="QHBoxLayout" name="_control_layout">
+          <item>
+           <widget class="QSpinBox" name="_length_spin">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(80, 80, 80);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 2px;
+border-color: rgb(90, 90, 90);
+ </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>512</number>
+            </property>
+            <property name="value">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="_length_label">
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Password length(512 symbols max)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="_sizer2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>156</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="_generate_btn">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(80, 80, 80);
+border-style: solid;
+border-radius: 2px;
+color: rgb(255, 255, 255);
+border-color: rgb(90, 90, 90);
+</string>
+            </property>
+            <property name="text">
+             <string>Generate!</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../TinyPasswordGenerator.qrc"/>
+ </resources>
+ <connections/>
+</ui>
