@@ -1,2 +1,2 @@
 # Tiny Password Generator
-Simple password generator on C++ and Qt5
+Simple password generator in C++ and Qt5
